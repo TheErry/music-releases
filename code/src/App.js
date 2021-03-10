@@ -1,19 +1,19 @@
 import React from 'react'
 import data from './data.json'
-import { Album } from "./Album"
+import CardContainer from "./CardContainer"
+
 
 console.log(data)
 
 console.log(data.album)
 
-export const App = () => {
-  return (
-    // <div>
-    //   <Album />
-    // </div>
+const App = () => {
+  return ( 
     <div>
-      <Album length="1"/>
+      <CardContainer data={data.albums.items} />
     </div>
   
-  )
+  );
   };
+ 
+export default App;

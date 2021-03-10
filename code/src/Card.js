@@ -1,16 +1,13 @@
 import React from "react";
 import Artist from "./Artist";
 
-const Card = () => {
+const Card = (props) => {
   return (
   
     <div className="album-card">
-      <h1>Album Name</h1>
-      <div>
-        <Artist/>
-      </div>  
+        <Artist artist={props.artist} artistUrl={props.artistUrl}/> 
     </div> 
   );
  };
 
- export default Card;
+ export default Card
