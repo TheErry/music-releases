@@ -1,6 +1,6 @@
 import React from 'react'
 import data from './data.json'
-import CardContainer from "./CardContainer"
+import CardContainer from "./Components/CardContainer"
 
 
 console.log(data)
