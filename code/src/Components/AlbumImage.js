@@ -5,9 +5,7 @@ const AlbumImage = (props) => {
     
     
     return (
-      <div>
       <img src={image} alt="Album image"/>
-      </div>
     )
   }
   
