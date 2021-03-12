@@ -5,7 +5,9 @@ const AlbumImage = (props) => {
     
     
     return (
-      <img src={image} alt="Album image"/>
+      <div className="album-image-container">
+        <img className="album-image" src={image} alt="Album"/>
+      </div>
     )
   }
   

@@ -3,7 +3,7 @@ import Card from './Card'
 
 const CardContainer = (props) => {
     return ( 
-        <div className = "cardContainer" > {
+        <div className = "card-container" > {
             props.data.map((item) => 
               <Card 
                 key={item.external_urls.spotify} 

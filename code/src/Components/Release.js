@@ -5,8 +5,8 @@ const Release = (props) => {
   const releaseUrl = props.releaseUrl
   
   return (
-    <div>
-    <a href={releaseUrl}>
+    <div className="title-container">
+    <a className="title" href={releaseUrl}>
       {releaseName}
     </a>
     </div>
