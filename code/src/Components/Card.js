@@ -1,5 +1,5 @@
 import React from "react";
-import Artist from "./Artist";
+import Artists from "./Artists";
 import Release from "./Release";
 import AlbumImage from "./AlbumImage";
 import IconContainer from "./IconContainer";
@@ -13,9 +13,12 @@ const Card = (props) => {
         <IconContainer/>
       </div>
         <Release release={props.release} releaseUrl={props.releaseUrl}/>
-        <Artist artist={props.artist} artistUrl={props.artistUrl}/> 
-    </div> 
-  );
- };
-
+        <div className="artist-container"> {
+        props.artist.map((props) => 
+            <Artists key={props.id} artistName={props.name} artistUrl={props.external_urls.spotify}/> 
+            )}
+          ;
+        </div>
+    </div>
+  )};
  export default Card

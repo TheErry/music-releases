@@ -36,6 +36,22 @@ code {
     width: 100%;
 }
 
+.inner-artist-container {}
+
+.inner-artist-container:not(:first-child, :last-child)::before {
+    content: ", ";
+    color: #a0a0a0;
+}
+
+.inner-artist-container:last-child::before {
+    content: " & ";
+    color: #a0a0a0;
+}
+
+.inner-artist-container:only-child::before {
+    content: "";
+}
+
 .heading {
     font-family: Helvetica;
     font-size: 20px;
