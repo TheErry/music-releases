@@ -11,7 +11,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 code {
@@ -23,20 +23,24 @@ code {
     justify-content: center;
 }
 
+.heading {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
 .card-container {
     width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 0;
 }
 
-.album-container {
-    width: 100%;
+.album-card {
+    margin-bottom: 30px;
 }
-
-.inner-artist-container {}
 
 .inner-artist-container:not(:first-child, :last-child)::before {
     content: ", ";
@@ -52,25 +56,14 @@ code {
     content: "";
 }
 
-.heading {
-    font-family: Helvetica;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
 a:link {
     text-decoration: none;
 }
-
-a:visited {}
 
 a:hover {
     text-decoration: underline;
     color: #ffffff;
 }
-
-a:active {}
 
 .title {
     font-family: Helvetica;
@@ -137,32 +130,87 @@ a:active {}
 
 .image-container {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 .album-image {
     width: 200px;
-    height: 200px;
 }
 
 
-/*Styling for tablet and small desktop*/
+/*Styling for tablet and small laptop*/
 
 @media (min-width:768px) and (max-width: 1200px) {
-    .image-container {
-        position: relative;
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .album-card {
+        width: 300px;
+        margin: 0 30px 30px 30px;
+    }
+    .album-image {
         width: 300px;
         height: 300px;
     }
 }
 
 
-/*Styling for big desktop*/
+/*Styling for laptop*/
 
 @media (min-width: 1200px) {
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .album-card {
+        width: 250px;
+        margin: 0 20px 30px 20px;
+    }
     .image-container {
         position: relative;
+        width: 250px;
+        height: 250px;
+    }
+    .album-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/* Styling for desktop */
+
+@media (min-width: 1450px) {
+    .card-container {
+        width: 1450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .album-card {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .image-container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+    .album-image {
         width: 300px;
         height: 300px;
     }

@@ -6,19 +6,26 @@ import IconContainer from "./IconContainer";
 
 const Card = (props) => {
   return (
-   
     <div className="album-card">
       <div className="image-container">
         <AlbumImage image={props.image} />
         <IconContainer/>
       </div>
-        <Release release={props.release} releaseUrl={props.releaseUrl}/>
-        <div className="artist-container"> {
+        <Release 
+          release={props.release} 
+          releaseUrl={props.releaseUrl}
+        />
+      <div className="artist-container"> {
         props.artist.map((props) => 
-            <Artists key={props.id} artistName={props.name} artistUrl={props.external_urls.spotify}/> 
-            )}
-          ;
-        </div>
+          <Artists 
+          key={props.id} 
+          artistName={props.name} 
+          artistUrl={props.external_urls.spotify}
+          /> 
+        )};
+      </div>
     </div>
-  )};
- export default Card
+  );
+};
+
+ export default Card;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Heading = () => {
   return (
@@ -7,7 +7,7 @@ const Heading = () => {
         New albums & singles
       </h1>
     </div>
-  )
-}
+  );
+};
 
 export default Heading;
