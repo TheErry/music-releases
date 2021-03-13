@@ -9,4 +9,4 @@ We were 3 people working on this project together. We used pair-programming and 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://loving-curie-music-releases.netlify.app/ 
