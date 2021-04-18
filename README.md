@@ -8,4 +8,4 @@ We were 3 people working on this project together. We used mob-programming and d
 
 ## View it live
 
-https://loving-curie-music-releases.netlify.app/ 
+https://spotify-clone-releases.netlify.app/
